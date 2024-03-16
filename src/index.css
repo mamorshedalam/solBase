@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sl-container {
+    @apply max-w-[1380px] w-full px-3 mx-auto;
+  }
+  .sl-animation {
+    @apply transition-all duration-300 ease-out;
+  }
+  .sl-animation-fade {
+    @apply transition-opacity duration-150 ease-linear;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-purple-200;
+  }
+
+  section {
+    @apply relative;
+  }
+
+  a,
+  button {
+    @apply inline-block cursor-pointer;
+  }
+
+  img {
+    @apply w-full;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply outline-none bg-transparent;
+  }
+
+  a,
+  button,
+  span,
+  p,
+  i,
+  input,
+  select,
+  textarea,
+  li,
+  ul,
+  img,
+  svg,
+  label,
+  svg path,
+  tr,
+  td,
+  *::after,
+  *::before,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply transition-all duration-300 ease-out;
+  }
+}
+
+@layer utilities {
+}
