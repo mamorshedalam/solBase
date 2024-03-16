@@ -2,7 +2,7 @@ import logoImg from '../assets/logo.png';
 export default function RootLayout() {
      return (
           <main className="sl-container">
-               <div className="min-h-screen w-full flex flex-wrap items-center">
+               <div className="min-h-screen w-full flex flex-wrap md:items-center py-10">
                     <div className="md:w-2/5 w-2/3 mx-auto">
                          <img src={logoImg} alt="logo" />
                     </div>
