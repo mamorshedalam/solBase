@@ -16,7 +16,7 @@
 
 @layer base {
   body {
-    @apply bg-purple-200;
+    @apply bg-gradient-to-b from-neutral-600 to-purple-900 text-white;
   }
 
   section {

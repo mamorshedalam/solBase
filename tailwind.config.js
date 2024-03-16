@@ -11,6 +11,13 @@ module.exports = {
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
     },
+    // colors: {
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   'white': '#ffffff',
+    //   'black': '#0000',
+    //   'neutral-900': '#141416',
+    // },
   },
   plugins: [],
 };
