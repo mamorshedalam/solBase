@@ -1,9 +1,9 @@
 import logoImg from '../assets/logo.png';
 export default function RootLayout() {
      return (
-          <main className="sl-container">
-               <div className="min-h-screen w-full flex flex-wrap md:items-center py-10">
-                    <div className="md:w-2/5 w-2/3 mx-auto">
+          <main className="min-h-screen sl-container">
+               <div className="md:min-h-screen w-full flex flex-wrap md:items-center py-10">
+                    <div className="md:w-2/5 w-2/3 h-fit mb-10 mx-auto">
                          <img src={logoImg} alt="logo" />
                     </div>
                     <div className="md:w-3/5 w-full lg:pl-10">
