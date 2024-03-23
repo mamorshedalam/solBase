@@ -126,10 +126,10 @@ export default function Home() {
                               </div>
                          </div>
                          <div className="flex flex-wrap w-full md:border border-white/10 rounded-b-lg">
-                              <div className="flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center rounded-bl-lg" style={{ backgroundImage: `url(${defImg})` }}>
+                              <div className="flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center md:rounded-bl-lg" style={{ backgroundImage: `url(${defImg})` }}>
                                    <h2 className="sm:text-4xl text-3xl leading-loose"><span className="text-[#AF6FCD]">Invest</span> in trading pools, getting both conservative and degen ROI</h2>
                               </div>
-                              <div className="flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#180B24] rounded-br-lg">
+                              <div className="flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#180B24] md:rounded-bl-none rounded-b-lg">
                                    <p className="text-white/70 sm:mb-6 mb-4">The core element of our project. We are a team of traders and developers. The motivation for the team to launch SolBase was to be able to use our extensive manual and algorithmic trading experience to benefit and benefit others by helping them getting a high return on their investment. Thus, we created a platform that contains trading pools, where investors can invest or stake their money for a specific amount of time and get the agreed-on ROI. </p>
                                    <button className="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 sm:py-3 py-2 rounded-lg hover:bg-[#180B24]">Learn More</button>
                               </div>
