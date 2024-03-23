@@ -23,10 +23,10 @@ export default function Home() {
                          </div>
                     </div>
                </section>
-               <section className="md:py-20 pb-20 bg-gradient-to-b from-purple-500 to-slate-950">
+               <section className="md:py-20 py-10 md:bg-gradient-to-b bg-neutral-900 from-purple-500 to-slate-950">
                     <div className="sl-container">
-                         <div className="flex flex-wrap w-full md:border border-amber-500/25 rounded-lg">
-                              <div className="md:w-2/5 w-full md:border-r border-amber-500/25 xl:px-16 md:py-40 sm:py-10 pb-10">
+                         <div className="flex flex-wrap w-full md:border border-amber-500/25 rounded-lg bg-neutral-900">
+                              <div className="md:w-2/5 w-full md:border-r border-amber-500/25 xl:px-16 md:px-3 md:py-40 sm:py-10 pb-10">
                                    <h2 className="md:text-5xl text-3xl font-semibold md:mb-6 mb-4">Why is SolBase <span className="text-amber-500">Ai</span>?</h2>
                                    <p>SolBase-AI offers multiple services enabling users to maximise profits on their investment. There are lots of way investors can generate profit using the platform.</p>
                               </div>
@@ -73,35 +73,34 @@ export default function Home() {
                          </div>
                     </div>
                </section>
-               <section className="md:py-20 bg-fixed bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: `url(${NumberImg})` }}>
+               <section className="py-20 bg-fixed bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: `url(${NumberImg})` }}>
                     <div className="absolute inset-0 w-full h-full bg-black/30 z-0"></div>
                     <div className="relative sl-container text-center z-10">
-                         <h2 className="md:text-5xl text-3xl font-semibold mb-9">We Take Pride in Our Numbers</h2>
+                         <h2 className="md:text-5xl text-3xl font-semibold md:mb-9 mb-6">We Take Pride in Our Numbers</h2>
                          <div className="lg:flex flex-wrap justify-between font-medium">
                               <div className="w-fit mx-auto sm:px-2 mb-6">
-                                   <span className="text-7xl">15</span>
+                                   <span className="md:text-7xl text-5xl">15</span>
                                    <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Quants</p>
                               </div>
                               <div className="w-fit mx-auto sm:px-2 mb-6">
-                                   <span className="text-7xl">$0K</span>
+                                   <span className="md:text-7xl text-5xl">$0K</span>
                                    <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Burned</p>
                               </div>
                               <div className="w-fit mx-auto sm:px-2 mb-6">
-                                   <span className="text-7xl">$2,851M</span>
+                                   <span className="md:text-7xl text-5xl">$2,851M</span>
                                    <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Market Cap</p>
                               </div>
                               <div className="w-fit mx-auto sm:px-2 mb-6">
-                                   <span className="text-7xl">$0.0285</span>
+                                   <span className="md:text-7xl text-5xl">$0.0285</span>
                                    <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Token Price</p>
                               </div>
                               <div className="w-fit mx-auto sm:px-2 mb-6">
-                                   <span className="text-7xl">2K</span>
+                                   <span className="md:text-7xl text-5xl">2K</span>
                                    <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Holders</p>
                               </div>
                          </div>
                     </div>
                </section>
-               <div className="py-40"></div>
           </main>
      )
 }

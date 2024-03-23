@@ -16,7 +16,7 @@
 
 @layer base {
   body {
-    @apply sm:text-base text-sm text-white bg-neutral-700;
+    @apply sm:text-base text-sm text-white bg-neutral-900;
   }
 
   section {
