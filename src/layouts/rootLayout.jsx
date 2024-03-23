@@ -11,7 +11,7 @@ export default function RootLayout() {
           <>
                <header className="fixed top-0 left-0 right-0 w-full shadow-lg shadow-slate-950/30 border-b border-white/10 bg-slate-950 flex justify-between items-center sm:px-9 px-2 z-[999]">
                     <div >
-                         <a href="/" className="md:text-2xl text-base font-semibold tracking-wider">SOL BASE <span className="text-amber-500">AI</span></a>
+                         <a href="/" className="md:text-2xl text-base font-semibold tracking-wider">SOLBASE <span className="text-amber-500">AI</span></a>
                     </div>
                     <div>
                          <div className="flex flex-wrap items-center">
@@ -35,7 +35,7 @@ export default function RootLayout() {
                <footer className="text-white/75 border-t border-white/10 sm:px-9 px-2 md:py-12 pt-10 pb-4">
                     <div className="flex flex-wrap">
                          <div className="lg:w-1/4 md:w-2/5">
-                              <a href="/" className="md:text-xl text-base font-semibold tracking-wider text-white">SOL BASE <span className="text-amber-500">AI</span></a>
+                              <a href="/" className="md:text-xl text-base font-semibold tracking-wider text-white">SOLBASE <span className="text-amber-500">AI</span></a>
                               <p className="text-xs mt-2">Disclaimer: Investing in tokens such as $SOLBASE carries inherent risks and may result in financial loss. The information provided here is for educational and informational purposes only and should not be considered as financial or investment advice. Before investing, it is important to conduct your own research, evaluate your financial situation, and seek advice from a licensed financial advisor. The value of $SOLBASE can be volatile and subject to market fluctuations. The token's value may be impacted by various factors, including market trends, government regulations, and technological advancements. The team behind $SOLBASE makes no warranties or representations regarding the accuracy, reliability, or completeness of the information provided here. Users should exercise caution and diligence when trading.</p>
                          </div>
                          <ul className="md:flex-grow md:block flex flex-wrap md:w-0 w-full text-center md:text-base text-sm font-medium">
