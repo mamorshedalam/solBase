@@ -7,7 +7,7 @@
     @apply max-w-[1380px] w-full px-3 mx-auto;
   }
   .sl-animation {
-    @apply transition-all duration-300 ease-out;
+    @apply transition-all duration-300 ease-in;
   }
   .sl-animation-fade {
     @apply transition-opacity duration-150 ease-linear;
@@ -16,7 +16,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-b from-neutral-600 to-purple-900 text-white;
+    @apply sm:text-base text-sm text-white bg-neutral-700;
   }
 
   section {
@@ -26,10 +26,6 @@
   a,
   button {
     @apply inline-block cursor-pointer;
-  }
-
-  img {
-    @apply w-full;
   }
 
   input,
@@ -62,7 +58,7 @@
   h4,
   h5,
   h6 {
-    @apply transition-all duration-300 ease-out;
+    @apply transition-all duration-300 ease-in;
   }
 }
 
