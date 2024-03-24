@@ -5,6 +5,10 @@ import NumberImg from "../assets/banner/numbers.jpg";
 import tradeImg from "../assets/banner/ai-trading.jpg";
 import ecoImg from "../assets/banner/eco-pattern.jpg";
 import defImg from "../assets/banner/definsurance.jpg";
+import figure5Img from "../assets/figure/figure5.png";
+import figure6Img from "../assets/figure/figure6.png";
+import figure8Img from "../assets/figure/figure8.png";
+import figure1Img from "../assets/figure/figure1.png";
 
 export default function Home() {
      return (
@@ -105,7 +109,7 @@ export default function Home() {
                          </div>
                     </div>
                </section>
-               <section className="md:py-20 py-10 bg-gradient-to-t from-purple-500">
+               <section className="md:py-20 py-10 bg-gradient-to-t from-purple-500 to-slate-950">
                     <div className="sl-container">
                          <div className="flex flex-wrap w-full md:border border-white/10 rounded-t-lg">
                               <div className="flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center md:rounded-tr-none rounded-t-lg" style={{ backgroundImage: `url(${tradeImg})` }}>
@@ -132,6 +136,78 @@ export default function Home() {
                               <div className="flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#180B24] md:rounded-bl-none rounded-b-lg">
                                    <p className="text-white/70 sm:mb-6 mb-4">The core element of our project. We are a team of traders and developers. The motivation for the team to launch SolBase was to be able to use our extensive manual and algorithmic trading experience to benefit and benefit others by helping them getting a high return on their investment. Thus, we created a platform that contains trading pools, where investors can invest or stake their money for a specific amount of time and get the agreed-on ROI. </p>
                                    <button className="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 sm:py-3 py-2 rounded-lg hover:bg-[#180B24]">Learn More</button>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <section className="md:py-20 py-10 md:bg-gradient-to-b from-purple-500 to-slate-950">
+                    <div className="sl-container">
+                         <div className="flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-sky-400/15">
+                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure5Img} alt="" /></div>
+                              <div className="w-3/4">
+                                   <div className="flex justify-between items-end mb-6">
+                                        <p className="flex items-end text-2xl font-semibold">
+                                             <span className="text-6xl mr-2">1</span> Phase
+                                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-4 mb-1.5 w-2.5 h-6 fill-amber-500" aria-hidden="true" aria-labelledby="svgcid--3v0be1wz0dv4" data-bbox="20 36 160 128" data-type="shape" preserveAspectRatio="none" viewBox="20 36 160 128">
+                                                  <path d="M128.109 164H20L71.891 36H180l-51.891 128z"></path>
+                                             </svg>
+                                        </p>
+                                        <span className="text-[#5BABA6] text-xl font-semibold">Month 1-2</span>
+                                   </div>
+                                   <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Token Launch and Initial Trading</h3>
+                                   <p className="text-white/75 mb-6">Develop and finalize the smart contracts for $SOLBASE token on Solana and Base chains. Conduct thorough testing and security audits of the smart contracts. Launch the ICO for $SOLBASE tokens on both Solana and Base chains, allowing investors to purchase tokens.</p>
+                                   <button class="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
+                              </div>
+                         </div>
+                         <div className="relative flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#111113]/85 to-[#111113] shadow-lg shadow-sky-400/15 ml-28 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-amber-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-amber-500">
+                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure6Img} alt="" /></div>
+                              <div className="w-3/4">
+                                   <div className="flex justify-between items-end mb-6">
+                                        <p className="flex items-end text-2xl font-semibold">
+                                             <span className="text-6xl mr-2">2</span> Phase
+                                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-4 mb-1.5 w-2.5 h-6 fill-amber-500" aria-hidden="true" aria-labelledby="svgcid--3v0be1wz0dv4" data-bbox="20 36 160 128" data-type="shape" preserveAspectRatio="none" viewBox="20 36 160 128">
+                                                  <path d="M128.109 164H20L71.891 36H180l-51.891 128z"></path>
+                                             </svg>
+                                        </p>
+                                        <span className="text-[#E46359] text-xl font-semibold">Month 2-4</span>
+                                   </div>
+                                   <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">NFT Launch and Integration</h3>
+                                   <p className="text-white/75 mb-6">Develop and mint the limited edition NFTs on Solana blockchain. Create the marketplace for trading SolBase NFTs. Integrate the NFT access key functionality into the Degen Haven platform. Implement staking mechanisms for SolBase NFTs to allow investors to generate ROI.</p>
+                                   <button class="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 py-2 rounded-lg hover:bg-[#111113]">Learn More</button>
+                              </div>
+                         </div>
+                         <div className="relative flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#17031F]/85 to-[#17031F] shadow-lg shadow-sky-400/15 ml-56 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-amber-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-amber-500">
+                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure8Img} alt="" /></div>
+                              <div className="w-3/4">
+                                   <div className="flex justify-between items-end mb-6">
+                                        <p className="flex items-end text-2xl font-semibold">
+                                             <span className="text-6xl mr-2">3</span> Phase
+                                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-4 mb-1.5 w-2.5 h-6 fill-amber-500" aria-hidden="true" aria-labelledby="svgcid--3v0be1wz0dv4" data-bbox="20 36 160 128" data-type="shape" preserveAspectRatio="none" viewBox="20 36 160 128">
+                                                  <path d="M128.109 164H20L71.891 36H180l-51.891 128z"></path>
+                                             </svg>
+                                        </p>
+                                        <span className="text-[#AF6FCD] text-xl font-semibold">Month 5-7</span>
+                                   </div>
+                                   <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Token Launch and Initial Trading</h3>
+                                   <p className="text-white/75 mb-6">Develop the Degen Haven platform, including the user interface and backend infrastructure. Implement the trading pools feature where investors can stake their assets for ROI. Integrate support for multiple cryptocurrencies including USDT, USDC, and $SOLBASE for investment in trading pools.</p>
+                                   <button class="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 py-2 rounded-lg hover:bg-[#17031F]">Learn More</button>
+                              </div>
+                         </div>
+                         <div className="relative flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#1B1C1E]/85 to-[#1B1C1E] shadow-lg shadow-sky-400/15 ml-[21rem] before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-amber-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-amber-500">
+                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure1Img} alt="" /></div>
+                              <div className="w-3/4">
+                                   <div className="flex justify-between items-end mb-6">
+                                        <p className="flex items-end text-2xl font-semibold">
+                                             <span className="text-6xl mr-2">4</span> Phase
+                                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-4 mb-1.5 w-2.5 h-6 fill-amber-500" aria-hidden="true" aria-labelledby="svgcid--3v0be1wz0dv4" data-bbox="20 36 160 128" data-type="shape" preserveAspectRatio="none" viewBox="20 36 160 128">
+                                                  <path d="M128.109 164H20L71.891 36H180l-51.891 128z"></path>
+                                             </svg>
+                                        </p>
+                                        <span className="text-[#DEBF81] text-xl font-semibold">Month 8-12</span>
+                                   </div>
+                                   <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Expansion and Optimization</h3>
+                                   <p className="text-white/75 mb-6">Gather feedback from users and iterate on the Degen Haven platform based on user experiences. Expand the range of trading pools available on the platform based on demand and market conditions. Enhance security measures and conduct regular audits to ensure the safety of user funds.</p>
+                                   <button class="w-fit bg-[#DEBF81] border-2 border-[#DEBF81] px-6 py-2 rounded-lg hover:bg-[#1B1C1E]">Learn More</button>
                               </div>
                          </div>
                     </div>
