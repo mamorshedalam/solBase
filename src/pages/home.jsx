@@ -2,9 +2,6 @@
 import logoImg from "../assets/logo/logo.png";
 import Button from "../components/Button/button";
 import NumberImg from "../assets/banner/numbers.jpg";
-import tradeImg from "../assets/banner/ai-trading.jpg";
-import ecoImg from "../assets/banner/eco-pattern.jpg";
-import defImg from "../assets/banner/definsurance.jpg";
 import figure5Img from "../assets/figure/figure5.png";
 import figure6Img from "../assets/figure/figure6.png";
 import figure8Img from "../assets/figure/figure8.png";
@@ -109,37 +106,6 @@ export default function Home() {
                          </div>
                     </div>
                </section>
-               <section className="md:py-20 py-10 bg-gradient-to-t from-purple-500 to-slate-950">
-                    <div className="sl-container">
-                         <div className="flex flex-wrap w-full md:border border-white/10 rounded-t-lg">
-                              <div className="flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center md:rounded-tr-none rounded-t-lg" style={{ backgroundImage: `url(${tradeImg})` }}>
-                                   <h2 className="sm:text-4xl text-3xl leading-loose">Trade <span className="text-[#208D7D]">$SOLBASE</span> on Solana/Base Chains as meme coins </h2>
-                              </div>
-                              <div className="flex flex-col justify-center sm:py-20 lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#181D2B] rounded-tr-lg">
-                                   <p className="text-white/70 sm:mb-6 mb-4">We decided to launch $SOLBASE on both Solana and Base chains, as this is where the market is currently exploding. We will offer an ICO on both tokens and launch them. Tokens can be traded, but also if held, they will provide customers with access to the Degen Haven.</p>
-                                   <button className="w-fit bg-[#208D7D] border-2 border-[#208D7D] px-6 sm:py-3 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
-                              </div>
-                         </div>
-                         <div className="flex flex-wrap w-full md:border border-white/10">
-                              <div className="md:order-1 order-2 flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#220001]">
-                                   <p className="text-white/70 sm:mb-6 mb-4">Our NFTs are not just jpegs. There will only ever be 1000 NFTs minted, therefore they can be traded as they will appreciate in value, they can be staked to generate ROI, but their main utility is to be used as an access key to the Degen Haven and provide investors with degenly high ROI.</p>
-                                   <button className="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 sm:py-3 py-2 rounded-lg hover:bg-[#220001]">Learn More</button>
-                              </div>
-                              <div className="md:order-2 order-1 flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${ecoImg})` }}>
-                                   <h2 className="sm:text-4xl text-3xl leading-loose">Trade SolBase NFTs and generate <span className="text-[#E46359]">revenue</span> by holding them</h2>
-                              </div>
-                         </div>
-                         <div className="flex flex-wrap w-full md:border border-white/10 rounded-b-lg">
-                              <div className="flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center md:rounded-bl-lg" style={{ backgroundImage: `url(${defImg})` }}>
-                                   <h2 className="sm:text-4xl text-3xl leading-loose"><span className="text-[#AF6FCD]">Invest</span> in trading pools, getting both conservative and degen ROI</h2>
-                              </div>
-                              <div className="flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#180B24] md:rounded-bl-none rounded-b-lg">
-                                   <p className="text-white/70 sm:mb-6 mb-4">The core element of our project. We are a team of traders and developers. The motivation for the team to launch SolBase was to be able to use our extensive manual and algorithmic trading experience to benefit and benefit others by helping them getting a high return on their investment. Thus, we created a platform that contains trading pools, where investors can invest or stake their money for a specific amount of time and get the agreed-on ROI. </p>
-                                   <button className="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 sm:py-3 py-2 rounded-lg hover:bg-[#180B24]">Learn More</button>
-                              </div>
-                         </div>
-                    </div>
-               </section>
                <section className="md:py-20 py-10 md:bg-gradient-to-b from-purple-500 to-slate-950">
                     <div className="sl-container">
                          <div className="flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-[#181D2B]/70">
@@ -156,7 +122,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Token Launch and Initial Trading</h3>
                                    <p className="text-white/75 mb-6">Develop and finalize the smart contracts for $SOLBASE token on Solana and Base chains. Conduct thorough testing and security audits of the smart contracts. Launch the ICO for $SOLBASE tokens on both Solana and Base chains, allowing investors to purchase tokens.</p>
-                                   <button class="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
+                                   <button className="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
                               </div>
                          </div>
                          <div className="lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#111113]/85 to-[#111113] shadow-lg shadow-[#111113]/70 lg:ml-28 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
@@ -173,7 +139,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">NFT Launch and Integration</h3>
                                    <p className="text-white/75 mb-6">Develop and mint the limited edition NFTs on Solana blockchain. Create the marketplace for trading SolBase NFTs. Integrate the NFT access key functionality into the Degen Haven platform. Implement staking mechanisms for SolBase NFTs to allow investors to generate ROI.</p>
-                                   <button class="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 py-2 rounded-lg hover:bg-[#111113]">Learn More</button>
+                                   <button className="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 py-2 rounded-lg hover:bg-[#111113]">Learn More</button>
                               </div>
                          </div>
                          <div className="lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#17031F]/85 to-[#17031F] shadow-lg shadow-[#17031F]/70 lg:ml-56 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
@@ -190,7 +156,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Token Launch and Initial Trading</h3>
                                    <p className="text-white/75 mb-6">Develop the Degen Haven platform, including the user interface and backend infrastructure. Implement the trading pools feature where investors can stake their assets for ROI. Integrate support for multiple cryptocurrencies including USDT, USDC, and $SOLBASE for investment in trading pools.</p>
-                                   <button class="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 py-2 rounded-lg hover:bg-[#17031F]">Learn More</button>
+                                   <button className="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 py-2 rounded-lg hover:bg-[#17031F]">Learn More</button>
                               </div>
                          </div>
                          <div className="lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#1B1C1E]/85 to-[#1B1C1E] shadow-lg shadow-[#1B1C1E]/70 lg:ml-[21rem] before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
@@ -207,7 +173,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Expansion and Optimization</h3>
                                    <p className="text-white/75 mb-6">Gather feedback from users and iterate on the Degen Haven platform based on user experiences. Expand the range of trading pools available on the platform based on demand and market conditions. Enhance security measures and conduct regular audits to ensure the safety of user funds.</p>
-                                   <button class="w-fit bg-[#DEBF81] border-2 border-[#DEBF81] px-6 py-2 rounded-lg hover:bg-[#1B1C1E]">Learn More</button>
+                                   <button className="w-fit bg-[#DEBF81] border-2 border-[#DEBF81] px-6 py-2 rounded-lg hover:bg-[#1B1C1E]">Learn More</button>
                               </div>
                          </div>
                     </div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import solImg from "../assets/company/sol.png";
 import baseImg from "../assets/company/base.png";
 import barImg from "../assets/icon/ham.svg";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Button from "../components/Button/button";
 
 export default function RootLayout() {
@@ -17,12 +17,12 @@ export default function RootLayout() {
                          <div className="flex flex-wrap items-center">
                               <nav className={`lg:relative absolute overflow-hidden top-full right-0 bg-slate-950 rounded-bl-md lg:w-auto lg:opacity-100 lg:visible sl-animation ${sidebar ? 'w-3/4 opacity-100 visible' : 'w-0 opacity-0 invisible'}`}>
                                    <ul className="flex flex-wrap lg:flex-row flex-col lg:text-xs text-center font-medium lg:mr-6 lg:mb-0 mb-2">
-                                        <li><a href="" className="lg:inline-block block p-3 hover:text-amber-500">Home</a></li>
-                                        <li><a href="" className="lg:inline-block block p-3 hover:text-amber-500">Utility</a></li>
-                                        <li><a href="" className="lg:inline-block block p-3 hover:text-amber-500">NFTs</a></li>
-                                        <li><a href="" className="lg:inline-block block p-3 hover:text-amber-500">Whitepaper</a></li>
-                                        <li><a href="" className="lg:inline-block block p-3 hover:text-amber-500">Hiring</a></li>
-                                        <li><a href="" className="lg:inline-block block p-3 hover:text-amber-500">About</a></li>
+                                        <li><NavLink to={`/`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
+                                        <li><NavLink to={`/utility`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
+                                        <li><NavLink to={`/nft`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
+                                        <li><NavLink to={`/whitepaper`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
+                                        <li><NavLink to={`/hiring`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
+                                        <li><NavLink to={`/about`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>About</NavLink></li>
                                    </ul>
                               </nav>
                               <Button classes="flex items-center text-xs sm:px-5 !px-3 md:py-2.5 !py-1.5 sm:my-4 my-3 gap-2 sm:mr-4 mr-2">Buy on <img src={solImg} alt="sol" className="h-5" /></Button>
@@ -49,9 +49,9 @@ export default function RootLayout() {
                          <div className="lg:w-1/5 md:w-2/5">
                               <h4 className="font-medium md:px-2">Follow Us</h4>
                               <ul className="flex flex-wrap">
-                                   <li><a href="https://twitter.com/SolBase_AI" target="_blank" className="px-2 py-1"><svg className="h-6 fill-current hover:fill-amber-500" stroke="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                   <li><a href="https://twitter.com/SolBase_AI" target="_blank" className="px-2 py-1"><svg className="h-6 fill-current hover:fill-amber-500" stroke="currentColor" strokeWidth="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
                                    </svg></a></li>
-                                   <li><a href="https://t.me/solbaseai" target="_blank" className="px-2 py-1"><svg className="h-6 fill-current hover:fill-amber-500" stroke="currentColor" stroke-width="0" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+                                   <li><a href="https://t.me/solbaseai" target="_blank" className="px-2 py-1"><svg className="h-6 fill-current hover:fill-amber-500" stroke="currentColor" strokeWidth="0" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
                                    </svg></a></li>
                               </ul>
