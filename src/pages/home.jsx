@@ -142,9 +142,9 @@ export default function Home() {
                </section>
                <section className="md:py-20 py-10 md:bg-gradient-to-b from-purple-500 to-slate-950">
                     <div className="sl-container">
-                         <div className="flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-sky-400/15">
-                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure5Img} alt="" /></div>
-                              <div className="w-3/4">
+                         <div className="flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-[#181D2B]/70">
+                              <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure5Img} alt="" /></div>
+                              <div className="md:w-3/4 w-full">
                                    <div className="flex justify-between items-end mb-6">
                                         <p className="flex items-end text-2xl font-semibold">
                                              <span className="text-6xl mr-2">1</span> Phase
@@ -159,9 +159,9 @@ export default function Home() {
                                    <button class="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
                               </div>
                          </div>
-                         <div className="relative flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#111113]/85 to-[#111113] shadow-lg shadow-sky-400/15 ml-28 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-amber-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-amber-500">
-                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure6Img} alt="" /></div>
-                              <div className="w-3/4">
+                         <div className="lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#111113]/85 to-[#111113] shadow-lg shadow-[#111113]/70 lg:ml-28 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
+                              <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure6Img} alt="" /></div>
+                              <div className="md:w-3/4 w-full">
                                    <div className="flex justify-between items-end mb-6">
                                         <p className="flex items-end text-2xl font-semibold">
                                              <span className="text-6xl mr-2">2</span> Phase
@@ -176,9 +176,9 @@ export default function Home() {
                                    <button class="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 py-2 rounded-lg hover:bg-[#111113]">Learn More</button>
                               </div>
                          </div>
-                         <div className="relative flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#17031F]/85 to-[#17031F] shadow-lg shadow-sky-400/15 ml-56 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-amber-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-amber-500">
-                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure8Img} alt="" /></div>
-                              <div className="w-3/4">
+                         <div className="lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#17031F]/85 to-[#17031F] shadow-lg shadow-[#17031F]/70 lg:ml-56 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
+                              <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure8Img} alt="" /></div>
+                              <div className="md:w-3/4 w-full">
                                    <div className="flex justify-between items-end mb-6">
                                         <p className="flex items-end text-2xl font-semibold">
                                              <span className="text-6xl mr-2">3</span> Phase
@@ -193,9 +193,9 @@ export default function Home() {
                                    <button class="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 py-2 rounded-lg hover:bg-[#17031F]">Learn More</button>
                               </div>
                          </div>
-                         <div className="relative flex flex-wrap max-w-4xl p-12 mb-6 rounded-lg bg-gradient-to-b from-[#1B1C1E]/85 to-[#1B1C1E] shadow-lg shadow-sky-400/15 ml-[21rem] before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-amber-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-amber-500">
-                              <div className="w-1/4 flex items-center justify-center"><img className="max-w-52 w-full" src={figure1Img} alt="" /></div>
-                              <div className="w-3/4">
+                         <div className="lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#1B1C1E]/85 to-[#1B1C1E] shadow-lg shadow-[#1B1C1E]/70 lg:ml-[21rem] before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
+                              <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure1Img} alt="" /></div>
+                              <div className="md:w-3/4 w-full">
                                    <div className="flex justify-between items-end mb-6">
                                         <p className="flex items-end text-2xl font-semibold">
                                              <span className="text-6xl mr-2">4</span> Phase
