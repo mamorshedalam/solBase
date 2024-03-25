@@ -19,7 +19,7 @@ export default function Home() {
                                    <p className="xl:w-2/3 sm:text-xl text-lg mb-6">The first meme inspired token that maximizes returns though investment pools.</p>
                                    <div className="flex flex-wrap">
                                         <div>
-                                             <span className="block text-white/75 font-medium pl-1 mb-1">Pre Sale</span>
+                                             <span className="block text-white/75 font-medium pl-1 mb-1">Pre-Sale</span>
                                              <Button classes="mr-4">Buy on Solana</Button>
                                         </div>
                                         <div>
