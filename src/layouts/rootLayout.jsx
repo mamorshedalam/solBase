@@ -27,7 +27,6 @@ export default function RootLayout() {
                                         <li><NavLink to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
                                         <li><NavLink to={`/whitepaper`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
                                         <li><NavLink to={`/hiring`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
-                                        <li><NavLink to={`/about`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>About</NavLink></li>
                                    </ul>
                               </nav>
                               <Button classes="flex items-center text-xs sm:px-5 !px-3 md:py-2.5 !py-1.5 sm:my-4 my-3 gap-2 sm:mr-4 mr-2">Buy on <img src={solImg} alt="sol" className="h-5" /></Button>
@@ -49,7 +48,6 @@ export default function RootLayout() {
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">NFTs</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Whitepaper</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Hiring</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">About</a></li>
                          </ul>
                          <div className="lg:w-1/5 md:w-2/5">
                               <h4 className="font-medium md:px-2">Follow Us</h4>

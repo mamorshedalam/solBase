@@ -4,6 +4,7 @@ import ErrorPage from "../pages/errorPage";
 import Home from "../pages/home";
 import Utility from "../pages/utility";
 import Nft from "../pages/nft";
+import Hiring from "../pages/hiring";
 
 const routes = createBrowserRouter([
      {
@@ -19,6 +20,10 @@ const routes = createBrowserRouter([
                {
                     path: '/nft',
                     element: <Nft />
+               },
+               {
+                    path: '/hiring',
+                    element: <Hiring />
                },
           ]
      }
