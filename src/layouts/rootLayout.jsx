@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import solImg from "../assets/company/sol.png";
 import baseImg from "../assets/company/base.png";
 import barImg from "../assets/icon/ham.svg";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import Button from "../components/Button/button";
 
 export default function RootLayout() {
      const [sidebar, setSidebar] = useState(false);
+     const { pathname } = useLocation();
+
+     useEffect(() => { // Top in Render
+          if (pathname != "/") window.scrollTo(0, 0);
+     }, [pathname]);
      return (
           <>
                <header className="fixed top-0 left-0 right-0 w-full shadow-lg shadow-slate-950/30 border-b border-white/10 bg-slate-950 flex justify-between items-center sm:px-9 px-2 z-[999]">
@@ -17,12 +22,12 @@ export default function RootLayout() {
                          <div className="flex flex-wrap items-center">
                               <nav className={`lg:relative absolute overflow-hidden top-full right-0 bg-slate-950 rounded-bl-md lg:w-auto lg:opacity-100 lg:visible sl-animation ${sidebar ? 'w-3/4 opacity-100 visible' : 'w-0 opacity-0 invisible'}`}>
                                    <ul className="flex flex-wrap lg:flex-row flex-col lg:text-xs text-center font-medium lg:mr-6 lg:mb-0 mb-2">
-                                        <li><NavLink to={`/`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
-                                        <li><NavLink to={`/utility`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
-                                        <li><NavLink to={`/nft`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
-                                        <li><NavLink to={`/whitepaper`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
-                                        <li><NavLink to={`/hiring`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
-                                        <li><NavLink to={`/about`} className={({isActive})=> isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>About</NavLink></li>
+                                        <li><NavLink to={`/`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
+                                        <li><NavLink to={`/utility`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
+                                        <li><NavLink to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
+                                        <li><NavLink to={`/whitepaper`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
+                                        <li><NavLink to={`/hiring`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
+                                        <li><NavLink to={`/about`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>About</NavLink></li>
                                    </ul>
                               </nav>
                               <Button classes="flex items-center text-xs sm:px-5 !px-3 md:py-2.5 !py-1.5 sm:my-4 my-3 gap-2 sm:mr-4 mr-2">Buy on <img src={solImg} alt="sol" className="h-5" /></Button>
@@ -35,7 +40,7 @@ export default function RootLayout() {
                <footer className="text-white/75 border-t border-white/10 sm:px-9 px-2 md:py-12 pt-10 pb-4">
                     <div className="flex flex-wrap">
                          <div className="lg:w-1/4 md:w-2/5">
-                              <a href="/" className="md:text-xl text-base font-semibold tracking-wider text-white">SOLBASE <span className="text-amber-500">AI</span></a>
+                              <a href="/" className="text-2xl font-semibold tracking-wider text-white">SOLBASE <span className="text-amber-500">AI</span></a>
                               <p className="text-xs mt-2">Disclaimer: Investing in tokens such as $SOLBASE carries inherent risks and may result in financial loss. The information provided here is for educational and informational purposes only and should not be considered as financial or investment advice. Before investing, it is important to conduct your own research, evaluate your financial situation, and seek advice from a licensed financial advisor. The value of $SOLBASE can be volatile and subject to market fluctuations. The token's value may be impacted by various factors, including market trends, government regulations, and technological advancements. The team behind $SOLBASE makes no warranties or representations regarding the accuracy, reliability, or completeness of the information provided here. Users should exercise caution and diligence when trading.</p>
                          </div>
                          <ul className="md:flex-grow md:block flex flex-wrap md:w-0 w-full text-center md:text-base text-sm font-medium">

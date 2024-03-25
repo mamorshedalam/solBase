@@ -6,6 +6,7 @@ import figure5Img from "../assets/figure/figure5.png";
 import figure6Img from "../assets/figure/figure6.png";
 import figure8Img from "../assets/figure/figure8.png";
 import figure1Img from "../assets/figure/figure1.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
      return (
@@ -43,7 +44,7 @@ export default function Home() {
                                              </svg></div>
                                              <h3 className="text-lg font-semibold mt-4 mb-2">$SOLBASE</h3>
                                              <p className="text-white/75 mb-6">Trading $SOLBASE as a meme coin on 2 of the most explosive chains</p>
-                                             <button className="py-2 px-3 rounded-lg font-semibold bg-sky-400/25 hover:bg-sky-400">Read more</button>
+                                             <Link to={`/utility`} className="py-2 px-3 rounded-lg font-semibold bg-sky-400/25 hover:bg-sky-400">Read more</Link>
                                         </div>
                                         <div className="sm:max-w-60 w-full px-6 py-8 ml-auto rounded-lg bg-gradient-to-b from-rose-700 to-rose-900 shadow-lg shadow-rose-400/25 text-sm sm:mb-6 mb-8">
                                              <div><svg className="fill-rose-400" xmlns="http://www.w3.org/2000/svg" width="53" height="34" aria-hidden="true" aria-labelledby="svgcid--igpc9261a4jj" data-bbox="20.42 48.257 159.16 103.485" data-type="color" viewBox="20.42 48.257 159.16 103.485">
@@ -51,7 +52,7 @@ export default function Home() {
                                              </svg></div>
                                              <h3 className="text-lg font-semibold mt-4 mb-2">Trading Pools</h3>
                                              <p className="text-white/75 mb-6">Investing in trading pools, getting both conservative and degen ROI</p>
-                                             <button className="py-2 px-3 rounded-lg font-semibold bg-rose-400/25 hover:bg-rose-400">Read more</button>
+                                             <Link to={`/utility`} className="py-2 px-3 rounded-lg font-semibold bg-rose-400/25 hover:bg-rose-400">Read more</Link>
                                         </div>
                                    </div>
                                    <div className="sm:w-1/2 sm:px-3 md:mt-20">
@@ -63,7 +64,7 @@ export default function Home() {
                                              </svg></div>
                                              <h3 className="text-lg font-semibold my-2">NFTs</h3>
                                              <p className="text-white/75 mb-6">Generating revenue through holding and trading NFTs</p>
-                                             <button className="py-2 px-3 rounded-lg font-semibold bg-violet-400/25 hover:bg-violet-400">Read more</button>
+                                             <Link to={`/utility`} className="py-2 px-3 rounded-lg font-semibold bg-violet-400/25 hover:bg-violet-400">Read more</Link>
                                         </div>
                                         <div className="sm:max-w-60 w-full px-6 py-8 rounded-lg bg-gradient-to-b from-slate-700 to-slate-900 shadow-lg shadow-slate-400/25 text-sm sm:mb-6 mb-8">
                                              <div><svg className="fill-slate-400" xmlns="http://www.w3.org/2000/svg" width="43" height="39" aria-hidden="true" aria-labelledby="svgcid-d50ipbiu0jba" data-bbox="20.124 26.752 159.752 146.495" data-type="color" viewBox="20.124 26.752 159.752 146.495">
@@ -71,7 +72,7 @@ export default function Home() {
                                              </svg></div>
                                              <h3 className="text-lg font-semibold my-2">Trading Bots</h3>
                                              <p className="text-white/75 mb-6">Renting trading bots & copy trading our teams’ accounts</p>
-                                             <button className="py-2 px-3 rounded-lg font-semibold bg-slate-400/25 hover:bg-slate-400">Read more</button>
+                                             <Link to={`/utility`} className="py-2 px-3 rounded-lg font-semibold bg-slate-400/25 hover:bg-slate-400">Read more</Link>
                                         </div>
                                    </div>
                               </div>
