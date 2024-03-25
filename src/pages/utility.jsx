@@ -43,12 +43,12 @@ export default function Utility() {
                               </div>
                          </div>
                          <div className="wow fadeInLeft flex flex-wrap w-full md:border border-white/10">
-                              <div className="md:order-1 order-2 flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-[#181D2B]">
+                              <div className="md:order-1 order-2 flex flex-col justify-center lg:px-20 sm:px-10 py-10 px-5 md:w-2/5 bg-slate-950">
                                    <p className="text-white/70 sm:mb-6 mb-4">Our trading bots will be available for renting as scripts after launching our pools. Customers can rent them for durations from 1 to 30 days and use them trading their own funds. The bots won’t be available to buy and the source code isn’t available to the public. We will also provide accounts on CEXs to allow customers to copy our trades. This feature will be available on third party platforms, and there will be no fee charged for this outside the platform’s fees.</p>
-                                   <button className="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 sm:py-3 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
+                                   <button className="w-fit bg-sky-700 border-2 border-sky-700 px-6 sm:py-3 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
                               </div>
                               <div className="md:order-2 order-1 flex items-center text-center md:w-3/5 w-full sm:py-20 lg:px-20 sm:px-10 py-10 px-5 border-r border-white/10 md:min-h-[600px] min-h-[280px] bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${neuImg})` }}>
-                                   <h2 className="sm:text-4xl text-3xl leading-loose w-full">Trading <span className="text-[#5BABA6]">bots</span></h2>
+                                   <h2 className="sm:text-4xl text-3xl leading-loose w-full">Trading <span className="text-sky-700">bots</span></h2>
                               </div>
                          </div>
                     </div>
