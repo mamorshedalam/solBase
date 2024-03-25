@@ -5,7 +5,10 @@ import Home from "../pages/home";
 import Utility from "../pages/utility";
 import Nft from "../pages/nft";
 import Hiring from "../pages/hiring";
-import Pool from "../pages/pool";
+import TradingPool from "../pages/tradingPool";
+import SolBase from "../pages/solbase";
+import TradingBot from "../pages/tradingBot";
+import CopyTrading from "../pages/copyTrading";
 
 const routes = createBrowserRouter([
      {
@@ -27,8 +30,20 @@ const routes = createBrowserRouter([
                     element: <Hiring />
                },
                {
-                    path: '/pool',
-                    element: <Pool />
+                    path: '/trading-pool',
+                    element: <TradingPool />
+               },
+               {
+                    path: '/solbase',
+                    element: <SolBase />
+               },
+               {
+                    path: '/trading-bot',
+                    element: <TradingBot />
+               },
+               {
+                    path: '/copy-trading',
+                    element: <CopyTrading />
                },
           ]
      }

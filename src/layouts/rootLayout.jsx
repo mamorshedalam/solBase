@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import solImg from "../assets/company/sol.png";
 import baseImg from "../assets/company/base.png";
 import barImg from "../assets/icon/ham.svg";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import Button from "../components/Button/button";
 import WOW from "wow.js";
 
@@ -29,7 +29,7 @@ export default function RootLayout() {
                                    <ul className="flex flex-wrap lg:flex-row flex-col lg:text-xs text-center font-medium lg:mr-6 lg:mb-0 mb-2">
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/utility`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
-                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/pool`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Pools</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/trading-pool`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Pools</NavLink></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
                                         <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-3 hover:text-amber-500">Whitepaper</a></li>
                                         <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-3 hover:text-amber-500">KYC</a></li>
@@ -51,14 +51,14 @@ export default function RootLayout() {
                               <p className="text-xs mt-2">Disclaimer: Investing in tokens such as $SOLBASE carries inherent risks and may result in financial loss. The information provided here is for educational and informational purposes only and should not be considered as financial or investment advice. Before investing, it is important to conduct your own research, evaluate your financial situation, and seek advice from a licensed financial advisor. The value of $SOLBASE can be volatile and subject to market fluctuations. The token's value may be impacted by various factors, including market trends, government regulations, and technological advancements. The team behind $SOLBASE makes no warranties or representations regarding the accuracy, reliability, or completeness of the information provided here. Users should exercise caution and diligence when trading.</p>
                          </div>
                          <ul className="md:flex-grow md:block flex flex-wrap md:w-0 w-full text-center md:text-base text-sm font-medium">
-                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Home</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Utility</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Pools</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">NFTs</a></li>
+                              <li><Link to={`/`} className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Home</Link></li>
+                              <li><Link to={`/utility`} className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Utility</Link></li>
+                              <li><Link to={`/trading-pool`} className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Pools</Link></li>
+                              <li><Link to={`nft`} className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">NFTs</Link></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Whitepaper</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">KYC</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Audit</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Hiring</a></li>
+                              <li><Link to={`/hiring`} className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Hiring</Link></li>
                          </ul>
                          <div className="lg:w-1/5 md:w-2/5">
                               <h4 className="font-medium md:px-2">Follow Us</h4>
