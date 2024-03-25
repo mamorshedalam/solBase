@@ -4,6 +4,7 @@ import baseImg from "../assets/company/base.png";
 import barImg from "../assets/icon/ham.svg";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import Button from "../components/Button/button";
+import WOW from "wow.js";
 
 export default function RootLayout() {
      const [sidebar, setSidebar] = useState(false);
@@ -12,9 +13,13 @@ export default function RootLayout() {
      useEffect(() => { // Top in Render
           if (pathname != "/") window.scrollTo(0, 0);
      }, [pathname]);
+
+     useEffect(() => {
+          new WOW().init();
+     }, [])
      return (
           <>
-               <header className="fixed top-0 left-0 right-0 w-full shadow-lg shadow-slate-950/30 border-b border-white/10 bg-slate-950 flex justify-between items-center sm:px-9 px-2 z-[999]">
+               <header className="wow fadeIn fixed top-0 left-0 right-0 w-full shadow-lg shadow-slate-950/30 border-b border-white/10 bg-slate-950 flex justify-between items-center sm:px-9 px-2 z-[999]">
                     <div >
                          <a href="/" className="md:text-2xl text-base font-semibold tracking-wider">SOLBASE <span className="text-amber-500">AI</span></a>
                     </div>
@@ -22,11 +27,11 @@ export default function RootLayout() {
                          <div className="flex flex-wrap items-center">
                               <nav className={`lg:relative absolute overflow-hidden top-full right-0 bg-slate-950 rounded-bl-md lg:w-auto lg:opacity-100 lg:visible sl-animation ${sidebar ? 'w-3/4 opacity-100 visible' : 'w-0 opacity-0 invisible'}`}>
                                    <ul className="flex flex-wrap lg:flex-row flex-col lg:text-xs text-center font-medium lg:mr-6 lg:mb-0 mb-2">
-                                        <li><NavLink to={`/`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
-                                        <li><NavLink to={`/utility`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
-                                        <li><NavLink to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
-                                        <li><NavLink to={`/whitepaper`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
-                                        <li><NavLink to={`/hiring`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/utility`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/whitepaper`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/hiring`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
                                    </ul>
                               </nav>
                               <Button classes="flex items-center text-xs sm:px-5 !px-3 md:py-2.5 !py-1.5 sm:my-4 my-3 gap-2 sm:mr-4 mr-2">Buy on <img src={solImg} alt="sol" className="h-5" /></Button>
@@ -36,7 +41,7 @@ export default function RootLayout() {
                     </div>
                </header>
                <Outlet />
-               <footer className="text-white/75 border-t border-white/10 sm:px-9 px-2 md:py-12 pt-10 pb-4">
+               <footer className="wow fadeInUp text-white/75 border-t border-white/10 sm:px-9 px-2 md:py-12 pt-10 pb-4">
                     <div className="flex flex-wrap">
                          <div className="lg:w-1/4 md:w-2/5">
                               <a href="/" className="text-2xl font-semibold tracking-wider text-white">SOLBASE <span className="text-amber-500">AI</span></a>
