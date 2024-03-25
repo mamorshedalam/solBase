@@ -5,6 +5,7 @@ import Home from "../pages/home";
 import Utility from "../pages/utility";
 import Nft from "../pages/nft";
 import Hiring from "../pages/hiring";
+import Pool from "../pages/pool";
 
 const routes = createBrowserRouter([
      {
@@ -24,6 +25,10 @@ const routes = createBrowserRouter([
                {
                     path: '/hiring',
                     element: <Hiring />
+               },
+               {
+                    path: '/pool',
+                    element: <Pool />
                },
           ]
      }

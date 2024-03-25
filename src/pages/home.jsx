@@ -109,6 +109,11 @@ export default function Home() {
                </section>
                <section className="md:py-20 py-10 md:bg-gradient-to-b from-purple-500 to-slate-950">
                     <div className="sl-container">
+                         <div className="flex flex-wrap items-center justify-center w-full gap-12 mb-20">
+                              <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 py-2.5 px-9 rounded-lg font-semibold hover:text-white">Whitepaper</a>
+                              <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 py-2.5 px-9 rounded-lg font-semibold hover:text-white">KYC</a>
+                              <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 py-2.5 px-9 rounded-lg font-semibold hover:text-white">Audit</a>
+                         </div>
                          <div className="wow fadeInLeft flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-[#181D2B]/70">
                               <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure5Img} alt="" /></div>
                               <div className="md:w-3/4 w-full">

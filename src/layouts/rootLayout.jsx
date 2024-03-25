@@ -29,8 +29,11 @@ export default function RootLayout() {
                                    <ul className="flex flex-wrap lg:flex-row flex-col lg:text-xs text-center font-medium lg:mr-6 lg:mb-0 mb-2">
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Home</NavLink></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/utility`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Utility</NavLink></li>
+                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/pool`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Pools</NavLink></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>NFTs</NavLink></li>
-                                        <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/whitepaper`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Whitepaper</NavLink></li>
+                                        <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-3 hover:text-amber-500">Whitepaper</a></li>
+                                        <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-3 hover:text-amber-500">KYC</a></li>
+                                        <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-3 hover:text-amber-500">Audit</a></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/hiring`} className={({ isActive }) => isActive ? "lg:inline-block block p-3 text-amber-500" : "lg:inline-block block p-3 hover:text-amber-500"}>Hiring</NavLink></li>
                                    </ul>
                               </nav>
@@ -50,8 +53,11 @@ export default function RootLayout() {
                          <ul className="md:flex-grow md:block flex flex-wrap md:w-0 w-full text-center md:text-base text-sm font-medium">
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Home</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Utility</a></li>
+                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Pools</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">NFTs</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Whitepaper</a></li>
+                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">KYC</a></li>
+                              <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Audit</a></li>
                               <li><a href="" className="relative md:px-4 px-2 md:py-1 py-4 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Hiring</a></li>
                          </ul>
                          <div className="lg:w-1/5 md:w-2/5">
