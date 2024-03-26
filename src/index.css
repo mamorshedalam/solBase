@@ -63,4 +63,17 @@
 }
 
 @layer utilities {
+  .sl-submenu-hover > ul{
+    transition: all 0.3s ease-out 0s;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top;
+    transform: perspective(300px) rotateX(-18deg);
+  }
+
+  .sl-submenu-hover:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(300px) rotateX(0deg);
+  }
 }

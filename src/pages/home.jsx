@@ -1,14 +1,47 @@
-
-import logoImg from "../assets/logo/logo.png";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import PieChart from "../components/Chart/pieChar";
 import Button from "../components/Button/button";
+import logoImg from "../assets/logo/logo.png";
 import NumberImg from "../assets/banner/numbers.jpg";
 import figure5Img from "../assets/figure/figure5.png";
 import figure6Img from "../assets/figure/figure6.png";
 import figure8Img from "../assets/figure/figure8.png";
 import figure1Img from "../assets/figure/figure1.png";
-import { Link } from "react-router-dom";
+let CHARTDATA = [
+     {
+          id: 1,
+          percentage: 50,
+          label: "Liquidity Pool",
+     },
+     {
+          id: 2,
+          percentage: 30,
+          label: "Presale",
+     },
+     {
+          id: 3,
+          percentage: 10,
+          label: "Developers & Incentivising Team Building/Maintaining Project",
+     },
+     {
+          id: 4,
+          percentage: 10,
+          label: "Marketing, Treasury & Collaboration",
+     }
+]
 
 export default function Home() {
+     const [chartData, setChartData] = useState({
+          labels: CHARTDATA.map((data) => data.label),
+          datasets: [
+               {
+                    data: CHARTDATA.map((data) => data.percentage),
+                    backgroundColor: ["#fbbf24", "#f59e0b", "#d97706", "#b45309"],
+                    borderWidth: 0,
+               }
+          ]
+     })
      return (
           <main>
                <section className="md:pt-40 py-20 bg-gradient-to-t from-purple-500 to-slate-950">
@@ -121,8 +154,19 @@ export default function Home() {
                          </div>
                     </div>
                </section>
-               <section className="md:py-20 py-10 md:bg-gradient-to-b from-purple-500 to-slate-950">
+               <section className="md:py-20 py-10 md:bg-gradient-to-t from-purple-500 to-slate-950">
                     <div className="sl-container">
+                         <div className="flex flex-wrap items-center justify-center mb-20">
+                              <div className="max-w-lg w-full md:flex justify-end md:mb-0 mb-6">
+                                   <PieChart chartData={chartData} />
+                              </div>
+                              <div className="md:w-fit w-full">
+                                   <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Liquidity Pool - <span className="text-amber-500">50%</span></p>
+                                   <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Presale - <span className="text-amber-500">30%</span></p>
+                                   <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Developers & Incentivising Team Building/Maintaining Project - <span className="text-amber-500">10%</span></p>
+                                   <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Marketing, Treasury & Collaboration - <span className="text-amber-500">10%</span></p>
+                              </div>
+                         </div>
                          <div className="flex flex-wrap items-center justify-center w-full gap-12 mb-20 font-semibold text-lg text-slate-950">
                               <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">KYC</a>
                               <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Whitepaper</a>
