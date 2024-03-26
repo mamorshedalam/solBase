@@ -38,8 +38,8 @@ export default function Nft() {
                               <div className="w-0 flex-grow md:border-l border-white/10 bg-[#1B1C1E] md:p-16 p-4">
                                    <h3 className="text-2xl font-semibold text-amber-500 mb-4 tracking-wide">Silver</h3>
                                    <ul className="space-y-2">
-                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 130% on their investment per week on USDT & USDC </li>
-                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 150% on their investment per week on $SOLBASE</li>
+                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 130% on their investment per 14 days on USDT & USDC </li>
+                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 150% on their investment per 14 days on $SOLBASE</li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Access to degen pool</li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Exempt from paying fees when depositing </li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Exempt from paying fees when withdrawing</li>
@@ -51,8 +51,8 @@ export default function Nft() {
                               <div className="w-0 flex-grow md:border-l border-white/10 bg-[#1B1C1E] md:p-16 p-4">
                                    <h3 className="text-2xl font-semibold text-amber-500 mb-4 tracking-wide">Gold</h3>
                                    <ul className="space-y-2">
-                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 140% on their investment per week on USDT & USDC </li>
-                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 180% on their investment per week on $SOLBASE</li>
+                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 140% on their investment per 14 days on USDT & USDC </li>
+                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 180% on their investment per 14 days on $SOLBASE</li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Access to degen pool  </li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Exempt from paying fees when depositing </li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Exempt from paying fees when withdrawing</li>
@@ -64,8 +64,8 @@ export default function Nft() {
                               <div className="w-0 flex-grow rounded-b-lg md:rounded-bl-none md:border-l border-white/10 bg-[#1B1C1E] md:p-16 p-4">
                                    <h3 className="text-2xl font-semibold text-amber-500 mb-4 tracking-wide">Stellar</h3>
                                    <ul className="space-y-2">
-                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 180% on their investment per week on USDT & USDC </li>
-                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 220% on their investment per week on $SOLBASE</li>
+                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 180% on their investment per 14 days on USDT & USDC </li>
+                                        <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Get 220% on their investment per 14 days on $SOLBASE</li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Access to degen pool  </li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Exempt from paying fees when depositing </li>
                                         <li><FontAwesomeIcon className="text-amber-500 mr-2" icon={faCircleCheck} /> Exempt from paying fees when withdrawing</li>

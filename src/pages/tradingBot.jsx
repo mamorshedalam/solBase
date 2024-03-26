@@ -11,7 +11,7 @@ export default function TradingBot() {
                </section>
                <section className="md:pb-20 pb-10 md:-mt-20 -mt-16">
                     <div className="sl-container">
-                         <div className="wow fadeInUp bg-[#180B24] rounded-lg border border-white/15 md:px-20 md:py-20 py-12 px-5 shadow shadow-[#180B24]/30">
+                         <div className="wow fadeInUp bg-slate-950 rounded-lg border border-white/15 md:px-20 md:py-20 py-12 px-5 shadow shadow-[#180B24]/30">
                               <p className="mb-6">Through seamless integration with leading cryptocurrency exchanges, SolBase-AI grants users direct access to execute trades. Automation eliminates manual tasks, keeping traders ahead of the curve in a fast-paced market.</p>
                               <div className="flex flex-wrap items-center">
                                    <div className="lg:w-1/4 w-full mb-6"><img className="max-w-xs w-full mx-auto" src={fig3Img} alt="" /></div>

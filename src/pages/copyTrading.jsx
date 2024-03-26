@@ -11,7 +11,7 @@ export default function CopyTrading() {
                </section>
                <section className="md:pb-20 pb-10 md:-mt-20 -mt-16">
                     <div className="sl-container">
-                         <div className="wow fadeInUp bg-[#180B24] rounded-lg border border-white/15 md:px-20 md:py-20 py-12 px-5 shadow shadow-[#180B24]/30">
+                         <div className="wow fadeInUp bg-rose-950 rounded-lg border border-white/15 md:px-20 md:py-20 py-12 px-5 shadow shadow-[#180B24]/30">
                               <p className="mb-6">SolBase-AI introduces an innovative copy trading functionality, enabling users to replicate the trading activities of experienced traders seamlessly. Within this feature, users gain access to a selection of high-performing traders on the platform. By linking their accounts to these chosen traders, users can effortlessly mirror their real-time trading actions.</p>
                               <div className="flex flex-wrap items-center">
                                    <div className="lg:w-1/4 w-full mb-6"><img className="max-w-xs w-full mx-auto" src={fig7Img} alt="" /></div>

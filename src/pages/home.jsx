@@ -16,7 +16,7 @@ export default function Home() {
                          <div className="flex flex-wrap items-center justify-center">
                               <div className="wow fadeInDown md:w-3/5 lg:md:o p-10rder-1 order-2">
                                    <h1 className="lg:text-6xl sm:text-5xl text-4xl font-semibold md:mb-9 mb-6">Revolutionizing <span className="text-amber-500">Trading</span></h1>
-                                   <p className="xl:w-2/3 sm:text-xl text-lg mb-6">The first meme inspired token that maximizes returns though investment pools.</p>
+                                   <p className="xl:w-2/3 sm:text-xl text-lg mb-6">The first meme inspired investing platform that maximizes returns though trading pools.</p>
                                    <div className="flex flex-wrap">
                                         <div>
                                              <span className="block text-white/75 font-medium pl-1 mb-1">Pre-Sale</span>
@@ -65,7 +65,7 @@ export default function Home() {
                                                   <path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z" />
                                              </svg></div>
                                              <h3 className="text-lg font-semibold mt-4 mb-2">Copy Trading</h3>
-                                             <p className="text-white/75 mb-6">Investing in trading pools, getting both conservative and degen ROI</p>
+                                             <p className="text-white/75 mb-6">SolBase-AI introduces an innovative copy trading functionality, enabling users to replicate the trading activities of experienced traders seamlessly</p>
                                              <Link to={`/copy-trading`} className="py-2 px-3 rounded-lg font-semibold bg-teal-400/25 hover:bg-teal-400">Read more</Link>
                                         </div>
                                    </div>
@@ -103,8 +103,8 @@ export default function Home() {
                                    <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Chains</p>
                               </div>
                               <div className="wow fadeInUp w-fit mx-auto sm:px-2 mb-6">
-                                   <span className="md:text-7xl text-5xl">$1B</span>
-                                   <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Supply</p>
+                                   <span className="md:text-7xl text-5xl">0</span>
+                                   <p className="text-amber-500 mt-2 pt-2 border-t-4 border-amber-500">Tax</p>
                               </div>
                               <div className="wow fadeInUp w-fit mx-auto sm:px-2 mb-6">
                                    <span className="md:text-7xl text-5xl">1000</span>

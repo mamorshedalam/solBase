@@ -11,7 +11,7 @@ export default function SolBase() {
                </section>
                <section className="md:pb-20 pb-10 md:-mt-20 -mt-16">
                     <div className="sl-container">
-                         <div className="wow fadeInUp bg-[#180B24] rounded-lg border border-white/15 md:px-20 md:py-20 py-12 px-5 shadow shadow-[#180B24]/30">
+                         <div className="wow fadeInUp bg-[#181D2B] rounded-lg border border-white/15 md:px-20 md:py-20 py-12 px-5 shadow shadow-[#180B24]/30">
                               <p className="mb-6">SolBase-AI initiates its journey by launching $SOLBASE tokens on Solana and Base chains, tapping into the burgeoning market potential. Through an Initial Coin Offering (ICO), users can acquire $SOLBASE tokens, which serve as both tradable assets and access keys to the exclusive "Degen Haven" trading pools.</p>
                               <div className="flex flex-wrap items-center">
                                    <div className="lg:w-1/4 w-full mb-6"><img className="max-w-xs w-full mx-auto" src={fig2Img} alt="" /></div>
