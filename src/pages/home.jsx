@@ -63,11 +63,11 @@ export default function Home() {
                                    <div className="flex flex-wrap">
                                         <div>
                                              <span className="block text-white/75 font-medium pl-1 mb-1">Pre-Sale</span>
-                                             <Button classes="mr-4">Buy on Solana</Button>
+                                             <Button onClick={() => setPopUp(!popUp)} classes="mr-4">Buy on Solana</Button>
                                         </div>
                                         <div>
                                              <span className="block text-white/75 font-medium pl-1 mb-1">Coming Soon</span>
-                                             <Button classes="">Buy on Base</Button>
+                                             <Button onClick={() => setPopUp(!popUp)} classes="">Buy on Base</Button>
                                         </div>
                                    </div>
                               </div>
