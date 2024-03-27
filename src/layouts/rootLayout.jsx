@@ -5,9 +5,12 @@ import barImg from "../assets/icon/ham.svg";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import Button from "../components/Button/button";
 import WOW from "wow.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function RootLayout() {
      const [sidebar, setSidebar] = useState(false);
+     const [popUp, setPopUp] = useState(false);
      const { pathname } = useLocation();
 
      useEffect(() => { // Top in Render
@@ -19,6 +22,15 @@ export default function RootLayout() {
      }, [])
      return (
           <>
+               {/* POPUP */}
+               <div class={`fixed inset-0 w-full overflow-x-hidden overflow-y-auto z-[9999] sl-animation-fade opacity-100 h-full ${popUp ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
+                    <div onClick={() => setPopUp(!popUp)} class="absolute inset-0 w-full h-full bg-black/50 -z-10"></div >
+                    <div class={`relative max-w-[500px] w-full my-20 mx-auto z-10 rounded-3xl py-12 px-16 bg-gradient-to-t from-slate-900 to-purple-700 sl-animation translate-y-0 ${popUp ? 'translate-y-0' : '-translate-y-14'}`} >
+                         <button onClick={() => setPopUp(!popUp)} class="absolute right-6 top-6 text-white/60 text-lg hover:text-amber-500" ><FontAwesomeIcon icon={faXmark} /></button >
+                         <h2 className="sm:text-4xl text-center font-semibold">Coming <span className="text-amber-500">Soon</span>!</h2>
+                    </div >
+               </div >
+
                <header className="fixed top-0 left-0 right-0 w-full shadow-lg shadow-slate-950/30 border-b border-white/10 bg-slate-950 flex justify-between items-center sm:px-9 px-2 z-[999]">
                     <div >
                          <a href="/" className="md:text-2xl text-base font-semibold tracking-wider">SOLBASE <span className="text-amber-500">AI</span></a>
@@ -43,8 +55,8 @@ export default function RootLayout() {
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/copy-trading`} className={({ isActive }) => isActive ? "lg:hidden block p-2 text-amber-500" : "lg:hidden block p-2 hover:text-amber-500"}>Copy Trading</NavLink></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/nft`} className={({ isActive }) => isActive ? "lg:inline-block block p-2 text-amber-500" : "lg:inline-block block p-2 hover:text-amber-500"}>NFTs</NavLink></li>
                                         <li><a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-2 hover:text-amber-500">Whitepaper</a></li>
-                                        <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-2 hover:text-amber-500">KYC</a></li>
-                                        <li><a onClick={() => setSidebar(!sidebar)} className="lg:inline-block block p-2 hover:text-amber-500">Audit</a></li>
+                                        <li><button onClick={() => { setSidebar(!sidebar); setPopUp(!popUp) }} className="lg:inline-block block p-2 hover:text-amber-500">KYC</button></li>
+                                        <li><button onClick={() => { setSidebar(!sidebar); setPopUp(!popUp) }} className="lg:inline-block block p-2 hover:text-amber-500">Audit</button></li>
                                         <li><NavLink onClick={() => setSidebar(!sidebar)} to={`/hiring`} className={({ isActive }) => isActive ? "lg:inline-block block p-2 text-amber-500" : "lg:inline-block block p-2 hover:text-amber-500"}>Hiring</NavLink></li>
                                    </ul>
                               </nav>
@@ -65,8 +77,8 @@ export default function RootLayout() {
                               <li><Link to={`/`} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Home</Link></li>
                               <li><Link to={`/utility`} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Utility</Link></li>
                               <li><a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Whitepaper</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">KYC</a></li>
-                              <li><a href="" className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Audit</a></li>
+                              <li><button onClick={() => setPopUp(!popUp)} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">KYC</button></li>
+                              <li><button onClick={() => setPopUp(!popUp)} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Audit</button></li>
                               <li><Link to={`/hiring`} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">Hiring</Link></li>
                               <li><Link to={`/NFT`} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">NFT</Link></li>
                               <li><Link to={`/solbase`} className="relative md:px-4 px-2 py-1 hover:text-amber-500 before:absolute md:before:hidden before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-0.5 before:h-3 before:bg-amber-500">$SOLBASE</Link></li>

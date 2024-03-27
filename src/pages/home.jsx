@@ -8,6 +8,8 @@ import figure5Img from "../assets/figure/figure5.png";
 import figure6Img from "../assets/figure/figure6.png";
 import figure8Img from "../assets/figure/figure8.png";
 import figure1Img from "../assets/figure/figure1.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 let CHARTDATA = [
      {
           id: 1,
@@ -32,6 +34,7 @@ let CHARTDATA = [
 ]
 
 export default function Home() {
+     const [popUp, setPopUp] = useState(false);
      const [chartData, setChartData] = useState({
           labels: CHARTDATA.map((data) => data.label),
           datasets: [
@@ -44,6 +47,13 @@ export default function Home() {
      })
      return (
           <main>
+               <div class={`fixed inset-0 w-full overflow-x-hidden overflow-y-auto z-[9999] sl-animation-fade opacity-100 h-full ${popUp ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
+                    <div onClick={() => setPopUp(!popUp)} class="absolute inset-0 w-full h-full bg-black/50 -z-10"></div >
+                    <div class={`relative max-w-[500px] w-full my-20 mx-auto z-10 rounded-3xl py-12 px-16 bg-gradient-to-t from-slate-900 to-purple-700 sl-animation translate-y-0 ${popUp ? 'translate-y-0' : '-translate-y-14'}`} >
+                         <button onClick={() => setPopUp(!popUp)} class="absolute right-6 top-6 text-white/60 text-lg hover:text-amber-500" ><FontAwesomeIcon icon={faXmark} /></button >
+                         <h2 className="sm:text-4xl text-center font-semibold">Coming <span className="text-amber-500">Soon</span>!</h2>
+                    </div >
+               </div >
                <section className="md:pt-40 py-20 bg-gradient-to-t from-purple-500 to-slate-950">
                     <div className="sl-container">
                          <div className="flex flex-wrap items-center justify-center">
@@ -169,9 +179,9 @@ export default function Home() {
                               </div>
                          </div>
                          <div className="flex flex-wrap items-center justify-center w-full md:gap-x-12 gap-x-6 gap-y-4 mb-20 font-semibold text-lg text-slate-950">
-                              <a href="" className="order-1 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">KYC</a>
+                              <button onClick={() => setPopUp(!popUp)} className="order-1 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">KYC</button>
                               <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="md:order-2 order-3 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Whitepaper</a>
-                              <a href="" className="md:order-3 order-2 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Audit</a>
+                              <button onClick={() => setPopUp(!popUp)} className="md:order-3 order-2 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Audit</button>
                          </div>
                          <div className="wow fadeInLeft flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-[#181D2B]/70">
                               <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure5Img} alt="" /></div>
