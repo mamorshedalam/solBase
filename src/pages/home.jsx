@@ -161,6 +161,7 @@ export default function Home() {
                                    <PieChart chartData={chartData} />
                               </div>
                               <div className="md:w-fit w-full">
+                                   <p className="md:text-xl text-base font-semibold md:mb-6 mb-3"><span className="text-amber-500">Solana Contract: </span> 7jApS91bnwiQtrZs62bSpJSjszK5C6GWV8VUowgk8mD3</p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Liquidity Pool - <span className="text-amber-500">50%</span></p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Presale - <span className="text-amber-500">30%</span></p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Developers & Incentivising Team Building/Maintaining Project - <span className="text-amber-500">10%</span></p>
@@ -169,7 +170,7 @@ export default function Home() {
                          </div>
                          <div className="flex flex-wrap items-center justify-center w-full gap-12 mb-20 font-semibold text-lg text-slate-950">
                               <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">KYC</a>
-                              <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Whitepaper</a>
+                              <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Whitepaper</a>
                               <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Audit</a>
                          </div>
                          <div className="wow fadeInLeft flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-[#181D2B]/70">
@@ -186,7 +187,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Token Launch and Initial Trading</h3>
                                    <p className="text-white/75 mb-6">Develop and finalize the smart contracts for $SOLBASE token on Solana and Base chains. Conduct thorough testing and security audits of the smart contracts. Launch the ICO for $SOLBASE tokens on both Solana and Base chains, allowing investors to purchase tokens.</p>
-                                   <button className="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</button>
+                                   <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="w-fit bg-[#5BABA6] border-2 border-[#5BABA6] px-6 py-2 rounded-lg hover:bg-[#181D2B]">Learn More</a>
                               </div>
                          </div>
                          <div data-wow-delay="0.5s" className="wow fadeInLeft lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#111113]/85 to-[#111113] shadow-lg shadow-[#111113]/70 lg:ml-28 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
@@ -203,7 +204,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">NFT Launch and Integration</h3>
                                    <p className="text-white/75 mb-6">Develop and mint the limited edition NFTs on Solana blockchain. Create the marketplace for trading SolBase NFTs. Integrate the NFT access key functionality into the Degen Haven platform. Implement staking mechanisms for SolBase NFTs to allow investors to generate ROI.</p>
-                                   <button className="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 py-2 rounded-lg hover:bg-[#111113]">Learn More</button>
+                                   <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="w-fit bg-[#E46359] border-2 border-[#E46359] px-6 py-2 rounded-lg hover:bg-[#111113]">Learn More</a>
                               </div>
                          </div>
                          <div data-wow-delay="0.75s" className="wow fadeInLeft lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#17031F]/85 to-[#17031F] shadow-lg shadow-[#17031F]/70 lg:ml-56 before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
@@ -220,7 +221,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Token Launch and Initial Trading</h3>
                                    <p className="text-white/75 mb-6">Develop the Degen Haven platform, including the user interface and backend infrastructure. Implement the trading pools feature where investors can stake their assets for ROI. Integrate support for multiple cryptocurrencies including USDT, USDC, and $SOLBASE for investment in trading pools.</p>
-                                   <button className="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 py-2 rounded-lg hover:bg-[#17031F]">Learn More</button>
+                                   <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="w-fit bg-[#AF6FCD] border-2 border-[#AF6FCD] px-6 py-2 rounded-lg hover:bg-[#17031F]">Learn More</a>
                               </div>
                          </div>
                          <div data-wow-delay="1s" className="wow fadeInLeft lg:relative flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#1B1C1E]/85 to-[#1B1C1E] shadow-lg shadow-[#1B1C1E]/70 lg:ml-[21rem] before:absolute before:top-0 before:-left-12 before:h-full before:w-px before:bg-gradient-to-t before:from-amber-500/5 before:via-amber-500 before:to-amber-500/5 after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-12 after:h-px after:w-12 after:bg-gradient-to-r after:from-amber-500 after:to-amber-500/5">
@@ -237,7 +238,7 @@ export default function Home() {
                                    </div>
                                    <h3 className="sm:text-4xl text-3xl leading-relaxed mb-4">Expansion and Optimization</h3>
                                    <p className="text-white/75 mb-6">Gather feedback from users and iterate on the Degen Haven platform based on user experiences. Expand the range of trading pools available on the platform based on demand and market conditions. Enhance security measures and conduct regular audits to ensure the safety of user funds.</p>
-                                   <button className="w-fit bg-[#DEBF81] border-2 border-[#DEBF81] px-6 py-2 rounded-lg hover:bg-[#1B1C1E]">Learn More</button>
+                                   <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="w-fit bg-[#DEBF81] border-2 border-[#DEBF81] px-6 py-2 rounded-lg hover:bg-[#1B1C1E]">Learn More</a>
                               </div>
                          </div>
                     </div>
