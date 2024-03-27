@@ -161,17 +161,17 @@ export default function Home() {
                                    <PieChart chartData={chartData} />
                               </div>
                               <div className="md:w-fit w-full">
-                                   <p className="md:text-xl text-base font-semibold md:mb-6 mb-3"><span className="text-amber-500">Solana Contract: </span> 7jApS91bnwiQtrZs62bSpJSjszK5C6GWV8VUowgk8mD3</p>
+                                   <p className="md:text-xl text-base font-semibold break-words md:mb-6 mb-3"><span className="text-amber-500">Solana Contract: </span> 7jApS91bnwiQtrZs62bSpJSjszK5C6GWV8VUowgk8mD3</p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Liquidity Pool - <span className="text-amber-500">50%</span></p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Presale - <span className="text-amber-500">30%</span></p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Developers & Incentivising Team Building/Maintaining Project - <span className="text-amber-500">10%</span></p>
                                    <p className="md:text-xl text-base font-medium md:mb-4 mb-2">Marketing, Treasury & Collaboration - <span className="text-amber-500">10%</span></p>
                               </div>
                          </div>
-                         <div className="flex flex-wrap items-center justify-center w-full gap-12 mb-20 font-semibold text-lg text-slate-950">
-                              <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">KYC</a>
-                              <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Whitepaper</a>
-                              <a href="" className="bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Audit</a>
+                         <div className="flex flex-wrap items-center justify-center w-full md:gap-x-12 gap-x-6 gap-y-4 mb-20 font-semibold text-lg text-slate-950">
+                              <a href="" className="order-1 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">KYC</a>
+                              <a href="https://solbaseai.gitbook.io/solbase-ai/" target="_blank" className="md:order-2 order-3 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Whitepaper</a>
+                              <a href="" className="md:order-3 order-2 bg-gradient-to-r from-amber-500 to-amber-400 shadow-md shadow-slate-950/30 py-2.5 px-9 rounded-lg hover:text-white hover:shadow-amber-400/15">Audit</a>
                          </div>
                          <div className="wow fadeInLeft flex flex-wrap lg:max-w-4xl py-12 sm:px-12 px-6 mb-6 rounded-lg bg-gradient-to-b from-[#181D2B]/85 to-[#181D2B] shadow-lg shadow-[#181D2B]/70">
                               <div className="w-1/4 md:flex hidden items-center justify-center"><img className="max-w-52 w-full" src={figure5Img} alt="" /></div>
