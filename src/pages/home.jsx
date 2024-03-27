@@ -47,7 +47,7 @@ export default function Home() {
      })
      return (
           <main>
-               <div class={`fixed inset-0 w-full overflow-x-hidden overflow-y-auto z-[9999] sl-animation-fade opacity-100 h-full ${popUp ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
+               <div class={`fixed inset-0 w-full overflow-x-hidden overflow-y-auto z-[9999] sl-animation-fade ${popUp ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
                     <div onClick={() => setPopUp(!popUp)} class="absolute inset-0 w-full h-full bg-black/50 -z-10"></div >
                     <div class={`relative max-w-[500px] w-full my-20 mx-auto z-10 rounded-3xl py-12 px-16 bg-gradient-to-t from-slate-900 to-purple-700 sl-animation translate-y-0 ${popUp ? 'translate-y-0' : '-translate-y-14'}`} >
                          <button onClick={() => setPopUp(!popUp)} class="absolute right-6 top-6 text-white/60 text-lg hover:text-amber-500" ><FontAwesomeIcon icon={faXmark} /></button >
